@@ -62,3 +62,6 @@ populateForm();
 
 let serviceForm = document.getElementById( 'serviceForm' );
 serviceForm.addEventListener( 'submit', handleSubmit );
+
+console.log(popular);
+
