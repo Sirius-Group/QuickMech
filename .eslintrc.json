@@ -11,26 +11,11 @@
       "es6": true
     },
     "rules": {
-      "eqeqeq": [
-        "error",
-        "always"
-      ],
+      "eqeqeq": ["error", "always"],
       "no-console": "off",
       "no-undefined": "off",
-      "indent": [
-        "error",
-        2
-      ],
-      "quotes": [
-        "warn",
-        "single"
-      ],
-      "space-infix-ops": [
-        "error",
-        {
-          "int32Hint": false
-        }
-      ],
+      "indent": ["error", 2],
+      "quotes": ["warn", "single"],
       "no-multi-spaces": [
         "warn",
         {
@@ -47,9 +32,11 @@
           "builtinGlobals": true
         }
       ],
-      "semi": [
-        3,
-        "always"
-      ]
+      "semi": [2, "always"],
+      "eol-last": "error",
+      "no-var": "error",
+      "camelcase": 1
+      // "strict": [2, "global"]
     }
   }
+  
