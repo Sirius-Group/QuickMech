@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleServices.css">
     <title>Services</title>
 </head>
 
@@ -26,35 +26,42 @@
 
     <main>
 
-        <form id="serviceForm">
-            <fieldset>
-                <legend>Please pick your order:</legend>
 
+
+        <form class="login-wrap" id ="serviceForm">
+
+            <fieldset>
+                <legend>Pick your order</legend>
+            <section>
                 <label for="name">Your Name:</label>
                 <input required="required" type="text" id="customerName" size="10" maxlength="10"
-                    placeholder="Your name" name="Customer name">
-
+                    placeholder="Your name" name="Customer name" class="inline">
+                </section>
+                <section>
                 <label for="location">Your location:</label>
                 <input required="required" type="text" id="customerlocation" size="10" maxlength="10"
-                    placeholder="Your location" name="Customer location">
-
+                    placeholder="Your location" name="Customer location" class="inline1">
+                </section>
                 <br>
 
-                <label>Service type:</label>
-                <select name="service" id="service">
+
+                <label class="paddingLabel">Service type:</label>
+                     <select name="service" id="service">
+
+
 
                 </select>
 
-                <label>Service time:</label>
+                <label class="paddingLabel1">Service time:</label>
 
                 <select name="serviceTime" id="serviceTime">
 
                 </select>
 
                 <br>
-
-                <button type="submit">Submit Order</button>
-
+                    <div class="center">
+                        <button type="submit">Submit Order</button>
+                    </div>
             </fieldset>
         </form>
     </main>
