@@ -46,7 +46,6 @@ function populateForm() {
 
 function handleSubmit(event) {
   event.preventDefault();
-  console.log(event.target.value);
   new Service(
     document.getElementById('customerName').value,
     document.getElementById('customerlocation').value,
