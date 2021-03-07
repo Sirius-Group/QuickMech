@@ -28,45 +28,45 @@ function populateForm() {
     const ServiceOption = document.createElement('option');
     selectService.appendChild(ServiceOption);
     ServiceOption.textContent = `${serviceArray[i]}`;
-    //   ServiceOption.value = i;
+    
   }
 
   for (let i in timeArray) {
     const timeOption = document.createElement('option');
     selectTime.appendChild(timeOption);
     timeOption.textContent = `${timeArray[i]}`;
-    // ServiceOption.value = i;
+    
   }
 }
 
-function renderOrderedServices() {
+// function renderOrderedServices() {
 
-  const selectService = document.getElementById('service');
-  const selectTime = document.getElementById('serviceTime');
-  const ordersTable = document.getElementById('orderedSevices');
-  const customerName = document.getElementById('customerName');
-  const customerLocation = document.getElementById('customerlocation');
+//   const selectService = document.getElementById('service');
+//   const selectTime = document.getElementById('serviceTime');
+//   const ordersTable = document.getElementById('orderedSevices');
+//   const customerName = document.getElementById('customerName');
+//   const customerLocation = document.getElementById('customerlocation');
 
-  const tableRow = document.createElement('tr');
-  ordersTable.appendChild(tableRow);
+//   const tableRow = document.createElement('tr');
+//   ordersTable.appendChild(tableRow);
 
-  const customerNameData = document.createElement('td');
-  tableRow.appendChild(customerNameData);
-  customerNameData.textContent = `${customerName.value}`;
+//   const customerNameData = document.createElement('td');
+//   tableRow.appendChild(customerNameData);
+//   customerNameData.textContent = `${customerName.value}`;
 
-  const customerLocationData = document.createElement('td');
-  tableRow.appendChild(customerLocationData);
-  customerLocationData.textContent = `${customerLocation.value}`;
+//   const customerLocationData = document.createElement('td');
+//   tableRow.appendChild(customerLocationData);
+//   customerLocationData.textContent = `${customerLocation.value}`;
 
-  const selectServiceData = document.createElement('td');
-  tableRow.appendChild(selectServiceData);
-  selectServiceData.textContent = `${selectService.value}`;
+//   const selectServiceData = document.createElement('td');
+//   tableRow.appendChild(selectServiceData);
+//   selectServiceData.textContent = `${selectService.value}`;
 
-  const SelectTimeData = document.createElement('td');
-  tableRow.appendChild(SelectTimeData);
-  SelectTimeData.textContent = `${selectTime.value}`;
+//   const SelectTimeData = document.createElement('td');
+//   tableRow.appendChild(SelectTimeData);
+//   SelectTimeData.textContent = `${selectTime.value}`;
 
-}
+// }
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -78,10 +78,24 @@ function handleSubmit(event) {
 
   localStorage.setItem('Service', JSON.stringify(Service.allService));
 
-  renderOrderedServices();
+  // renderOrderedServices();
 
   serviceForm.reset();
 }
+
+function getBackDataFromLocalstorage()
+{
+  if(localStorage.Service)
+  {
+    let temp=JSON.parse(localStorage.getItem('Service'));
+    for (let index = 0; index < temp.length; index++) {
+      new Service(temp[index].name,temp[index].location,temp[index].service,temp[index].time);
+    }
+  }
+}
+
+
+getBackDataFromLocalstorage();
 
 populateForm();
 
