@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ribeye+Marrow&display=swap');
 body{
     width: 100%;
     overflow-x: hidden;
+    background-color: #f8f1f1;
 
 }
 
 header{
     width: 100%;
-    background-color: rgb(12, 12, 12);
+    background-color: #07031a;
 
 }
 main{
@@ -19,6 +22,8 @@ main{
 .li1{
     text-align: left;
     display: contents;
+    text-align: center;
+
 }
 header nav ul{
 
@@ -29,6 +34,7 @@ width: 50%;
 display: flex;
 /* justify-content: space-between; */
 align-items: center;
+text-transform: capitalize;
 
 }
 header nav ul li {
@@ -39,7 +45,7 @@ header nav ul li {
 }
 header nav {
 
-    background-color: rgb(12, 12, 12);
+    background-color: #07031a;
     color: white;
     height: 50px;
     
@@ -57,8 +63,8 @@ a:visited {
 }
 .intro__section { 
     /* width: 100%; */
-    background-color: rgb(14, 104, 165);
-    color: rgb(47, 255, 255);
+    background-color: #ffa62b;
+    color: #07031a;
     padding: 80px 0px;
     height: 200px;
 }
@@ -83,6 +89,9 @@ margin: 20px 0;
 
     font-size: 62px;
     margin: 0 0 0 30px;
+    /* font-family: 'Ribeye Marrow', cursive; */
+    font-family: 'Monoton', cursive;
+  
 }
 .intro__section p{
 line-height: 3;
@@ -122,17 +131,18 @@ padding: 50px 0px;
 }
 .meddil__h2 {
     font-size: 32px;
-    color: black;
+    color: #07031a;
+    font-family: 'Oleo Script', cursive;
 
 }
 .meddil__h2 span {
-    color: gray;
+    color: rgb(94, 85, 85);
     font-size: 22px;
 }
 
 .meddil__p{
 
-    color: darkgray;
+    color: #090422;
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -157,11 +167,10 @@ padding: 50px 0px;
 footer  div a{
 color: rgb(24, 96, 190);
 margin: 0 10px;
-
 }
 
 .section3 { 
-    background-color: goldenrod;
+    background-color: #16697a;
     width: 100%;
     /* margin: ; */
 
@@ -177,7 +186,6 @@ padding: 100px 0;
 
 .section3__medil{
     margin: 0 15px;
-
 }
 
 .section3__item1{
