@@ -3,7 +3,7 @@
 body{
     width: 100%;
     overflow-x: hidden;
-    background-color: #f8f1f1;
+    background-color: white;
 
 }
 
@@ -271,3 +271,42 @@ span{
     margin-left: 30px;
     color: darkgrey;
 }
+
+
+
+table{
+    /* background-color: #5cb958; */
+background-color: #f5f7f8;
+color: white;
+align-items: center;
+margin-left: 590px;
+margin-top: 200px;
+
+}
+
+
+td {
+    width: 50px;
+    border: 0.5px solid rgb(244, 246, 244);
+    padding: 5px;
+    text-align: center;
+    background-color: #009dff;
+    border-radius: 20px;
+
+  }
+  
+  th {
+    padding: 5px;
+    border: 0.5px solid rgb(244, 246, 244);
+    width: 50px;
+    border-radius: 40px;
+    vertical-align: middle;
+    background: #5cb958;
+    color: white;
+     text-align: center;
+  }
+
+  .ordarfooter{
+align-items: center;
+margin-top: 2px;
+  }
