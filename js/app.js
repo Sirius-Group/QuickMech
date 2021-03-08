@@ -34,6 +34,7 @@ function populateForm() {
     const timeOption = document.createElement('option');
     selectTime.appendChild(timeOption);
     timeOption.textContent = `${timeArray[i]}`;
+
   }
 }
 
