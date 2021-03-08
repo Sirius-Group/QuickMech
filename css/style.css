@@ -310,3 +310,7 @@ td {
 align-items: center;
 margin-top: 2px;
   }
+
+table tr a {
+    background-color: red;
+}

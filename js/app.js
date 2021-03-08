@@ -28,14 +28,13 @@ function populateForm() {
     const ServiceOption = document.createElement('option');
     selectService.appendChild(ServiceOption);
     ServiceOption.textContent = `${serviceArray[i]}`;
-    
   }
 
   for (let i in timeArray) {
     const timeOption = document.createElement('option');
     selectTime.appendChild(timeOption);
     timeOption.textContent = `${timeArray[i]}`;
-    
+
   }
 }
 
