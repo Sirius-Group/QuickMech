@@ -27,16 +27,17 @@ function handleApply(event) {
 
 }
 
-const parentElement = document.getElementById('output');
-parentElement.textContent = ('');
-const listOfApplication = document.createElement('ul');
-parentElement.appendChild(listOfApplication);
+let parentElement = document.getElementById('output');
+const listOfApplication= document.createElement('ul');
 
 function getApplication()
 {
 
+  listOfApplication.textContent='';
+
   if(localStorage.application)
   {
+
     let app=JSON.parse(localStorage.getItem('application'));
 
     for (let i=0; i<app.length; i++) {
@@ -44,11 +45,12 @@ function getApplication()
       // const listOfApplication = document.createElement('ul');
       // parentElement.appendChild(listOfApplication);
       const deleteLink = document.createElement( 'button' );
+      parentElement.appendChild(listOfApplication);
 
       deleteLink.textContent = 'X';
       deleteLink.setAttribute( 'type', 'button' );
       deleteLink.setAttribute( 'value', 'delete' );
-      deleteLink.setAttribute( 'onClick', 'deleteRow(this)' );
+      deleteLink.setAttribute( 'onClick', `deleteRow(${i})`);
       listOfApplication.appendChild(deleteLink);
       const applicantNameData = document.createElement('li');
       listOfApplication.appendChild(applicantNameData);
@@ -71,7 +73,7 @@ function getApplication()
 }
 
 
-getApplication();
+
 
 
 let joinForm = document.getElementById('joinForm');
@@ -91,12 +93,13 @@ function getBackDataFromLocalstorage()
 }
 
 getBackDataFromLocalstorage();
+getApplication();
+
+
 
 function deleteRow(list) {
-  let i = list.parentNode.parentNode.rowIndex;
-  listOfApplication.deleteRow(i);
-  Applicant.allApplicant.splice(i,1);
+
+  Applicant.allApplicant.splice(list,1);
   localStorage.setItem('application',JSON.stringify(Applicant.allApplicant));
+  getApplication();
 }
-
-

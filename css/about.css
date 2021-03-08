@@ -15,6 +15,7 @@ header{
 }
 main{
    width: 100%; 
+   height: 83vh;
 }
  nav{
     width: 960px;
@@ -103,5 +104,12 @@ h1 {
 footer  div a{
     color: rgb(24, 96, 190);
     margin: 0 10px;
+    
+    }
+
+    footer{
+        display: flex ;
+    flex-direction: column;
+    align-items: center;
     }
     
