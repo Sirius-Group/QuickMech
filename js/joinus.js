@@ -11,33 +11,6 @@ const Applicant = function (name, role, number, email) {
 
 Applicant.allApplicant = [];
 
-// function renderlistOfApplication() {
-
-
-//   const parentElement = document.getElementById('output');
-
-//   const listOfApplication = document.createElement('ul');
-//   parentElement.appendChild(listOfApplication);
-
-//   const applicantNameData = document.createElement('li');
-//   listOfApplication.appendChild(applicantNameData);
-//   applicantNameData.textContent = `The Applicant name is: ${ Applicant.allApplicant[0].name}`;
-
-//   const applicantRoleData = document.createElement('li');
-//   listOfApplication.appendChild(applicantRoleData);
-//   applicantRoleData.textContent = `His/her role is: ${Applicant.allApplicant[0].role}`;
-
-//   const applicantphoneData = document.createElement('li');
-//   listOfApplication.appendChild(applicantphoneData);
-//   applicantphoneData.textContent = `His/her phone number: ${Applicant.allApplicant[0].number}`;
-
-//   const emailData = document.createElement('li');
-//   listOfApplication.appendChild(emailData);
-//   emailData.textContent = `His/her phone email: ${Applicant.allApplicant[0].email}`;
-
-// }
-
-
 
 function handleApply(event) {
   event.preventDefault();
@@ -49,29 +22,34 @@ function handleApply(event) {
 
   localStorage.setItem('application', JSON.stringify(Applicant.allApplicant));
 
-
-
   joinForm.reset();
   getApplication();
-//   renderlistOfApplication();
+
 }
 
-
+const parentElement = document.getElementById('output');
+parentElement.textContent = ('');
+const listOfApplication = document.createElement('ul');
+parentElement.appendChild(listOfApplication);
 
 function getApplication()
 {
-  const parentElement = document.getElementById('output');
-  parentElement.textContent = ('');
+
   if(localStorage.application)
   {
     let app=JSON.parse(localStorage.getItem('application'));
 
-
     for (let i=0; i<app.length; i++) {
 
-      const listOfApplication = document.createElement('ul');
-      parentElement.appendChild(listOfApplication);
+      // const listOfApplication = document.createElement('ul');
+      // parentElement.appendChild(listOfApplication);
+      const deleteLink = document.createElement( 'button' );
 
+      deleteLink.textContent = 'X';
+      deleteLink.setAttribute( 'type', 'button' );
+      deleteLink.setAttribute( 'value', 'delete' );
+      deleteLink.setAttribute( 'onClick', 'deleteRow(this)' );
+      listOfApplication.appendChild(deleteLink);
       const applicantNameData = document.createElement('li');
       listOfApplication.appendChild(applicantNameData);
       applicantNameData.textContent = `The Applicant name is: ${ app[i].name}`;
@@ -89,17 +67,11 @@ function getApplication()
       emailData.textContent = `His/her phone email: ${app[i].email}`;
 
     }
-
-
-
   }
-  console.log(Applicant.allApplicant);
-
 }
 
 
 getApplication();
-// renderlistOfApplication();
 
 
 let joinForm = document.getElementById('joinForm');
@@ -112,10 +84,19 @@ function getBackDataFromLocalstorage()
   if(localStorage.application)
   {
     let app=JSON.parse(localStorage.getItem('application'));
-    for (let index = 0; index < app.length; index++) {
-      new Applicant(app[index].name,app[index].role,app[index].number,app[index].email);
+    for (let i = 0; i < app.length; i++) {
+      new Applicant(app[i].name,app[i].role,app[i].number,app[i].email);
     }
   }
 }
 
 getBackDataFromLocalstorage();
+
+function deleteRow(list) {
+  let i = list.parentNode.parentNode.rowIndex;
+  listOfApplication.deleteRow(i);
+  Applicant.allApplicant.splice(i,1);
+  localStorage.setItem('application',JSON.stringify(Applicant.allApplicant));
+}
+
+
