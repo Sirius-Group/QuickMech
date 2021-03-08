@@ -141,17 +141,7 @@ padding: 50px 0px;
 .div2 {
     margin: 0 15px;
 }
-.items__contener div h2 {
-    font-size: 20px;
-    color: rgb(27, 80, 179);
-    margin: 20px 0;
-}
 
-.items__contener div p {
-    font-size: 18px;
-    color: darkgrey;
-    
-}
 
 
 /* <!------------------------------------IMAGES SECTION---------------------------------------------> */
@@ -216,32 +206,7 @@ align-items: center;
             margin-left: 10px;
             font-size: 25px;
         }
-        .section3 p{
-            font-size: 18px;
-            line-height: 1.25;
-            margin-bottom: 20px;
-        }
-
-        .section3 button{
-            color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-        }
+        
         footer{
             height: 100px;
             padding: 20px 0;
