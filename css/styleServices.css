@@ -63,7 +63,7 @@ form {
     background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    margin: auto;
+    /* margin: auto; */
     position: relative;
     width: 550px;
     height: 300px;
@@ -177,7 +177,13 @@ footer{
     bottom: 0;
     width: 100%;
 }
-
+main
+{
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;}
 .footermidal{
 border-left: 2px solid darkgrey;        
 border-right: 2px solid darkgrey;     
@@ -205,4 +211,7 @@ table td {
 }
 table tr th {
   padding: 7px;
+}
+table{
+  color: #09C;
 }

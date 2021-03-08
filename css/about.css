@@ -1,13 +1,16 @@
-/* body{
+
+body{
     width: 100%;
     overflow-x: hidden;
-    background-color: #f8f1f1;
-    line-height: 1.5;
+    background-color: white;
+
+
 }
 
 header{
     width: 100%;
-    background-color: #2d5a87;
+
+    background-color: #07031a;
 
 }
 main{
@@ -26,31 +29,33 @@ main{
 header nav ul{
 
 
-/* margin:  0 50px; */
-/* height: 100%;
+
+height: 100%;
 width: 50%;
-display: flex; */
+display: flex;
 /* justify-content: space-between; */
-/* align-items: center;
+align-items: center;
 text-transform: capitalize;
 
 }
 header nav ul li {
-    display: inline; */
+
+    display: inline;
     /* padding: 25px; */
-    /* margin: 0 40px ;
+    margin: 0 40px ;
 
 }
-header nav { */
-/* background-color: #5B84C4; */
-    /* background-color: #2d5a87;
-    color: #f8f1f1;
+header nav {
+
+    background-color: #07031a;
+    color: white;
     height: 50px;
     
 }
 .logo{
-height: 50px;
-width: 50px;
+
+height: 35px;
+width: 35px;
 }
 a{
     color: white;
@@ -60,28 +65,43 @@ a:visited {
     color: white;
 }
 
-.two-col {
-    overflow: auto;
-  }
-  
-  .two-col p {
-    width: calc(100%/2);
-    float: left;
-    padding: 20px;
-    text-align: justify;
-  }
-  
-  .three-col {
-    clear: both;
-    overflow: auto;
-  }
-  
-  .three-col article {
-    width: calc(100% / 3);
-    float: left;
-    padding: 20px;
-  }
-  
-  .three-col article img {
-    width: 100%;
-  } */
+
+h1 {
+    text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+    grid-template-columns: repeat(5, 100px);
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    margin: auto
+}
+
+.container h1 {
+    grid-column: 1 / -1
+}
+
+.container img {
+/*   display: grid; */
+/*   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+/*   gap: 10px; */
+    padding: 10px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 5px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+footer  div a{
+    color: rgb(24, 96, 190);
+    margin: 0 10px;
+    }
+    
