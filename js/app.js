@@ -119,6 +119,7 @@ serviceForm.addEventListener('submit', handleSubmit);
 
 const ordersTable = document.getElementById('orderedSevices');
 function renderOrderedServices() {
+  ordersTable.textContent='';
   // const selectService = document.getElementById('service');
   // const selectTime = document.getElementById('serviceTime');
   // const customerName = document.getElementById('customerName');

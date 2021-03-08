@@ -52,6 +52,7 @@ function handleApply(event) {
 
 
   joinForm.reset();
+  getApplication();
 //   renderlistOfApplication();
 }
 
@@ -60,7 +61,7 @@ function handleApply(event) {
 function getApplication()
 {
   const parentElement = document.getElementById('output');
-
+  parentElement.textContent = ('');
   if(localStorage.application)
   {
     let app=JSON.parse(localStorage.getItem('application'));
