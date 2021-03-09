@@ -1,68 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap%27');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Philosopher', sans-serif;
+}
+/* 
 body{
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  margin:0;
- color:#009dff;
- background:#f4f6ff;
- /* font:600 16px/18px 'Open Sans',sans-serif; */
- height: 50px;
-}
+    width: 100%;
+    overflow-x: hidden;
+    margin:0;
+	 color:#6a6f8c;
+	 background:#f4f6ff;
+	 font:600 16px/18px 'Open Sans',sans-serif; } */
 
-header{
-  width: 100%;
-  background-color: #009dff;
+   main {
 
-}
-nav{
   width: 960px;
   margin: auto;
-}
-.li1{
-  text-align: left;
-  display: contents;
-  text-align: center;
-}
-header nav ul{
-
-
-  margin:  0 50px;
-  height: 100%;
-  width: 50%;
+  /*------------------------- Edited by Raba'a-----------------------------*/
+  clear: both;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  text-transform: capitalize;
+  justify-content: space-around;
+  }
+
+   #logo {
+   width: 100%;
+   }
+     #logo img{
+       height: 100px;
+       width: 120px;
+       
+     }
+   
+   #logo div {
+   
+     display : flex;   
+     justify-content: center;
+     
+   }
+
+   header{
+
+    width: 1100px;
+    background-color: #009DFF;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+header nav ul  {
+  display : flex; justify-content:center; align-items: center;
+  font-weight: bolder;
+}  
+  header nav {
+    text-align: right;
+  }
   
+  a {
+    text-decoration: none;
+    color: #eff0b6;
+    padding: 0 20px;
+    font-weight: bolder;
 
-}
-header nav ul li {
-  display: inline;
-  padding: 25px;
-  margin: 0 40px ;
+  }
 
-}
-header nav {
-
-  background-color: #5B84C4;
-   background-color: #009dff;
-  color: #f8f1f1;
-  height: 50px;
-  
-}
-.logo{
-  height: 50px;
-  width: 50px;
-}
-a{
-  color: white;
-  text-decoration: none;
-}
-a:visited {
-  color: white;
-}
+a:hover {
+    background:white;
+    color: #009DFF;
+  }
 
 
 form {
@@ -169,47 +176,6 @@ form {
     border: 1px solid #09C;
   }
 
-
-
-
-footer{
-    height: 100px;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    /* width: 960px; */
-    margin: auto;
-    margin-top: 15px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-main
-{
-  clear: both;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  height: 65vh;
-}
-
-
-/* .footermidal{
-border-left: 2px solid darkgrey;        
-border-right: 2px solid darkgrey;     
-padding: 0 10px;   
-}
-.footer__a{
-
-margin: 20px;
-}
-footer  div a{
-    color: rgb(24, 96, 190);
-    margin: 0 10px;
-}
-
 span{
 margin-left: 30px;
 color: darkgrey;
@@ -273,10 +239,30 @@ table tr th {
   font-weight: bold;
 }
 
-/* table tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
+table{
+  color: #09C;
 }
 
-table tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-} */
+footer {
+
+  height: 100px;
+  width: 1100px;
+  display: flex;
+  background:#009DFF;;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  margin-top: 90px;
+}
+
+footer span {
+padding-top: 25px;
+}
+footer div a{
+  padding-top: 10px;
+  text-decoration: none;
+
+}
