@@ -37,6 +37,7 @@ width: 100%;
     align-items: center;
     padding: 20px;
     margin: auto;
+    font-family: 'Philosopher', sans-serif;
 }
 
 header nav ul  {
@@ -83,6 +84,7 @@ h2{
     font-size: 22px;
     color: #009dff;
     font-family: 'Philosopher', sans-serif;
+    
 }
 
 .accordion {
@@ -97,8 +99,7 @@ h2{
     outline: none;
     font-size: 23px;
     font-weight:bolder;
-    transition: 0.4s;
-    font-family: 'Open Sans Condensed', sans-serif;
+    transition: 0.4s; font-family: 'Philosopher', sans-serif;
   }
   
   .active, .accordion:hover {
@@ -108,8 +109,7 @@ h2{
   .panel {
     padding: 0 18px;
     display: none;
-    overflow: hidden;
-    font-family: 'Open Sans Condensed', sans-serif;
+    overflow: hidden; font-family: 'Philosopher', sans-serif;
     font-size: 23px;
     font-weight: 500;
     /* color:#5cb958; */
@@ -142,6 +142,7 @@ footer {
     padding: 25px;
     margin: auto;
   margin-top: 20px;
+  font-family: 'Philosopher', sans-serif;
   }
 
 footer span {

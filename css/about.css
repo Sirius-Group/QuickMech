@@ -33,6 +33,7 @@ width: 100%;
     align-items: center;
     padding: 20px;
     margin: auto;
+    font-family: 'Philosopher', sans-serif;
 }
 
 header nav ul  {
@@ -73,6 +74,7 @@ a:hover {
   text-align: center;
   font-size: 28px;
   padding-bottom: 30px;
+  margin-top: 40px;
 }
 
 .container img {
@@ -116,6 +118,7 @@ a:hover {
     text-align: center;
     padding: 25px;
     margin: auto;
+    font-family: 'Philosopher', sans-serif;
   }
 
 footer span {
