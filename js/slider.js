@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
