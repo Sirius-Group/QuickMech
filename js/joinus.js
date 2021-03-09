@@ -30,6 +30,7 @@ function handleApply(event) {
 
 let parentElement = document.getElementById('output');
 const listOfApplication= document.createElement('ul');
+listOfApplication.setAttribute('id', 'list');
 
 function getApplication()
 {
