@@ -78,6 +78,7 @@ a:hover {
 }
 
 .container img {
+  height: 100px;
   padding: 3px;
   border-radius: 50%;
   box-shadow: 5px 5px 5px 5px;
