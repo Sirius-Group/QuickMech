@@ -10,9 +10,7 @@
   width: 960px;
   margin: auto;
   /*------------------------- Edited by Raba'a-----------------------------*/
-  clear: both;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   }
@@ -66,7 +64,6 @@ a:hover {
 
 
 form {
-  background-color: #edeff1;
     background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
@@ -81,7 +78,6 @@ form {
     text-decoration: none;
     border-radius: 10px;
     padding: 10px;
-    border: inset 1px solid #333;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
