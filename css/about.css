@@ -82,6 +82,7 @@ a:hover {
   border-radius: 50%;
   box-shadow: 5px 5px 5px 5px;
   width: 100px;
+  
   display: flex;
   align-items: center;
   justify-content: center
