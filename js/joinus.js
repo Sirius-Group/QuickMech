@@ -17,22 +17,19 @@ function handleApply(event) {
     // document.getElementById('applicantRole').value,
     document.getElementById('applicantphone').value,
     document.getElementById('email').value);
-
   localStorage.setItem('application', JSON.stringify(Applicant.allApplicant));
 
   joinForm.reset();
   getApplication();
 }
-
 let parentElement = document.getElementById('output');
 const listOfApplication= document.createElement('ul');
 listOfApplication.setAttribute('id', 'list');
 
+
 function getApplication()
 {
-
   listOfApplication.textContent='';
-
   if(localStorage.application)
   {
     let app=JSON.parse(localStorage.getItem('application'));
@@ -82,19 +79,14 @@ function deleteRow(list) {
   getApplication();
 }
 function populateForm() {
+  let serviceArray = ['Car care', 'Cleaning', 'Electrical', 'Mechanical', 'Plumbing', 'Painting', 'Gardening', 'CCTV service'];
+  const selectService = document.getElementById('applicantphone');
+  const selectTime = document.getElementById('serviceTime');
+  for (let i in serviceArray) {
+    const ServiceOption = document.createElement('option');
+    selectService.appendChild(ServiceOption);
+    ServiceOption.textContent = `${serviceArray[i]}`;
 
-   let serviceArray = ['Car care', 'Cleaning', 'Electrical', 'Mechanical', 'Plumbing', 'Painting', 'Gardening', 'CCTV service'];
-
-
-   const selectService = document.getElementById('applicantphone');
-   const selectTime = document.getElementById('serviceTime');
-
-   for (let i in serviceArray) {
-     const ServiceOption = document.createElement('option');
-     selectService.appendChild(ServiceOption);
-     ServiceOption.textContent = `${serviceArray[i]}`;
-
-   }
- }
- populateForm();
-
+  }
+}
+populateForm();
