@@ -82,6 +82,7 @@ a:hover {
   border-radius: 50%;
   box-shadow: 5px 5px 5px 5px;
   width: 100px;
+  
   display: flex;
   align-items: center;
   justify-content: center
@@ -109,7 +110,7 @@ a:hover {
   footer {
 
     height: 100px;
-    width: 1100px;
+    width: auto;
     display: flex;
     background:#009DFF;;
     color: white;
