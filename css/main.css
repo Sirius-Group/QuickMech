@@ -29,14 +29,19 @@ width: 100%;
   img {
     width: 100%;
   }
-  
+
+  /* .main{
+    display:flexbox;
+  }
+   */
+
   header{
 
-    width: 1100px;
-    background-color: #009DFF;
+    
+    /* background-color: #009DFF; */
     align-items: center;
     padding: 20px;
-    margin: auto;
+    /* background-image: url(../img/img1.jpg); */
 }
 
 header nav ul  {
@@ -108,7 +113,7 @@ section:nth-child(4) {
   footer {
 
     height: 100px;
-    width: 1100px;
+   margin: auto;
     display: flex;
     background:#009DFF;;
     color: white;
@@ -116,7 +121,7 @@ section:nth-child(4) {
     flex-direction: column;
     text-align: center;
     padding: 25px;
-    margin: auto;
+  width: :1100px;
     font-family: 'Philosopher', sans-serif;
   }
 
@@ -134,8 +139,9 @@ p{
   margin-top: 40px;
   font-size: large;
 }
-
-
+ /* .main{
+  display: inline;
+} */
 /* .slide-container .prev,
 .slide-container .next {
   cursor: pointer;
