@@ -53,8 +53,7 @@ body{
 header nav ul  {
   display : flex; justify-content:center; align-items: center;
   font-weight: bolder;
-}
-  
+}  
   header nav {
     text-align: right;
   }
@@ -72,6 +71,7 @@ a:hover {
     color: #009DFF;
   }
 
+
 form {
     background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
@@ -80,11 +80,11 @@ form {
     position: relative;
     width: 550px;
     height: 300px;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     line-height: 24px;
     font-weight: bold;
-    color: rgb(24, 96, 190);
+    color: #009dff;
     text-decoration: none;
     border-radius: 10px;
     padding: 10px;
@@ -94,13 +94,14 @@ form {
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     margin-top: 60px;
-  }
+}
 
   legend{
     
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Philosopher', sans-serif;
     font-size: x-large;
+    margin-bottom: 10px;
   }
 
   .inline{
@@ -108,7 +109,7 @@ form {
       width: 70%;
      align-content: right;
      margin-top: 10px;
-     margin-left: 30px;
+     margin-left: 28px;
 
 
   }
@@ -135,16 +136,17 @@ form {
   .paddingLabel{
     justify-content: center;
     align-items: center;
-    padding-left: 30px;
-    margin-top: 15px;
-    margin-left: 30px;
+    padding-right: 20px;
+    margin-top: 5px;
+    /* margin-left: 0px; */
   }
 
   .paddingLabel1{
     justify-content: center;
     align-items: center;
     padding-left: 30px;
-    margin-left: 50px;
+    margin-left: 73px;
+    padding-right: 20px;
   }
 
   button {
@@ -152,7 +154,7 @@ form {
     right: 20px;
     bottom: 20px;
     margin-bottom: 50px;
-    background: rgb(24, 96, 190);
+    background: #009dff;
     color: #fff;
     font-family: Tahoma, Geneva, sans-serif;
     height: 30px;
@@ -177,17 +179,66 @@ form {
 span{
 margin-left: 30px;
 color: darkgrey;
+} */
+
+.footer__a a{
+  color: #009dff;
+  margin: 0 10px;
+  
+  }
+
+  footer{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .footermidal{
+      border-left: 2px solid darkgrey;        
+      border-right: 2px solid darkgrey;     
+      padding: 0 10px;   
+   }
+
+span{
+  margin-left: 30px;
+  margin-top: 10px;
+  color: darkgrey;
 }
 
+
+table{
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  /* margin: auto; */
+  position: relative;
+  width: 550px;
+  height: 300px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #009dff;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #999;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
+}
 table tr,td,th{
-  border: 2px solid black;
+  border: 1px solid #999;
+  text-align: center;
 }
 table td {
   padding:  10px;
+  height: 10px;
 }
 table tr th {
   padding: 7px;
+  font-weight: bold;
 }
+
 table{
   color: #09C;
 }

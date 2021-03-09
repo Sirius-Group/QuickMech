@@ -42,6 +42,7 @@ width: 100%;
 header nav ul  {
   display : flex; justify-content:center; align-items: center;
   font-weight: bolder;
+
 }
   
   header nav {
@@ -62,7 +63,6 @@ a:hover {
   }
   
 
-
 h1{
     text-align: center;
     margin: 30px;
@@ -74,6 +74,7 @@ h1{
 .container{
     width: 80%;
     margin: auto;
+    
 }
 h2{
     text-align: left;
@@ -110,8 +111,9 @@ h2{
     overflow: hidden;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 23px;
-    font-weight: 400;
-    color:#5cb958;
+    font-weight: 500;
+    /* color:#5cb958; */
+    color:#6bd16a;
     background-color: #e4e3e3;
     padding: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
