@@ -6,17 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/joinus.css">
     <title>joinus</title>
 </head>
 
 <body>
 
+    <div id="logo">
+        <div>
+            <img src="../img/Quick.png">
+            <img src="../img/QUICKMECK.png">
+            <img src="../img/Mech.png">
+        </div>
+    </div>
+
+
     <header>
         <nav>
             <ul>
-                <li class="li1">  <img class="logo" src="../img/QM.png" alt=""></a></li>
+                <li class="li1"> <img class="logo" src="../img/QM.png" alt=""></a></li>
                 <li><a href="../index.html"> Home</a></li>
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./joinus.html"> Join us</a></li>
@@ -27,12 +35,16 @@
     </header>
 
     <main>
-
+        
         <section>
-            <divc class="apply" id="apply">
+           
+               
+
+            <div class="apply" id="apply">
                 <form class="joinForm" id="joinForm">
 
                     <fieldset>
+                        <img class="imagepng"  src="../img/QUICKMECK_Join_Us-01.png"  >    
                         <legend>apply your application here</legend>
                         <section>
                             <label for="name">Your Name:</label>
@@ -47,11 +59,12 @@
                         <section>
                             <label for="phone">Your Phone Number:</label>
                             <input required="required" type="text" id="applicantphone" placeholder="07"
-                                name="Applicant phone" class="inline1">
+                                name="Applicant phone"  maxlength="14"
+                                class="inline1">
                         </section>
                         <section>
                             <label for="email">Your Email:</label>
-                            <input type="text" id="email" placeholder="email@gmail.com" name="Applicant Email"
+                            <input required="required" type="text" id="email" placeholder="email@gmail.com" name="Applicant Email"
                                 class="inline1">
                         </section>
 
@@ -77,17 +90,16 @@
     </main>
 
     <footer>
-        <div class="footer__a">
-            <a href="#">Terms & Conditions</a>
-            <a class="footermidal" href="#">Privacy Policy</a>
+        <div>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Privacy Policy</a>
             <a href="#">Contact</a>
         </div>
         <span>
-            Copyright © Example.com 2021
+            All Rights Reserved 2021 © QUICKMECH Powered by Sirius Group
         </span>
 
     </footer>
-    <script src="https://kit.fontawesome.com/8ab77e432b.js" crossorigin="anonymous"></script>
     <!-- <script src="../js/app.js"></script> -->
     <script src="../js/joinus.js"></script>
 

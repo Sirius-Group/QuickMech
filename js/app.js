@@ -39,34 +39,6 @@ function populateForm() {
   }
 }
 
-// function renderOrderedServices() {
-
-//   const selectService = document.getElementById('service');
-//   const selectTime = document.getElementById('serviceTime');
-//   const ordersTable = document.getElementById('orderedSevices');
-//   const customerName = document.getElementById('customerName');
-//   const customerLocation = document.getElementById('customerlocation');
-
-//   const tableRow = document.createElement('tr');
-//   ordersTable.appendChild(tableRow);
-
-//   const customerNameData = document.createElement('td');
-//   tableRow.appendChild(customerNameData);
-//   customerNameData.textContent = `${customerName.value}`;
-
-//   const customerLocationData = document.createElement('td');
-//   tableRow.appendChild(customerLocationData);
-//   customerLocationData.textContent = `${customerLocation.value}`;
-
-//   const selectServiceData = document.createElement('td');
-//   tableRow.appendChild(selectServiceData);
-//   selectServiceData.textContent = `${selectService.value}`;
-
-//   const SelectTimeData = document.createElement('td');
-//   tableRow.appendChild(SelectTimeData);
-//   SelectTimeData.textContent = `${selectTime.value}`;
-
-// }
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -108,22 +80,10 @@ serviceForm.addEventListener('submit', handleSubmit);
 
 
 
-
-
-
-
-
-
-
-
-
 const ordersTable = document.getElementById('orderedSevices');
 function renderOrderedServices() {
   ordersTable.textContent='';
-  // const selectService = document.getElementById('service');
-  // const selectTime = document.getElementById('serviceTime');
-  // const customerName = document.getElementById('customerName');
-  // const customerLocation = document.getElementById('customerlocation');
+
   if(localStorage.Service)
   {
     let temp=JSON.parse(localStorage.getItem('Service'));
@@ -154,7 +114,7 @@ function renderOrderedServices() {
     }
   }
 }
-// eslint-disable-next-line no-unused-vars
+
 function deleteRow(r) {
   let i = r.parentNode.parentNode.rowIndex;
   ordersTable.deleteRow(i);
