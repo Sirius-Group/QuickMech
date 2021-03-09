@@ -230,5 +230,17 @@ body h1 {
   margin: 0 0.5rem;
 
   animation: bounce;
-  animation-duration: 2s;
+  animation-duration: 4s;
+}
+
+.image-section div img{
+  width: 800px;
+  height:500px;
+}
+.image-section div h3{
+ color: black;
+ font-weight: bolder;
+ font-size: xx-large;
+ text-transform: uppercase;
+justify-content: center;
 }
