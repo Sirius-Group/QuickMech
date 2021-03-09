@@ -30,6 +30,7 @@ function handleApply(event) {
 
 let parentElement = document.getElementById('output');
 const listOfApplication= document.createElement('ul');
+listOfApplication.setAttribute('id', 'list');
 
 function getApplication()
 {
@@ -104,3 +105,19 @@ function deleteRow(list) {
   localStorage.setItem('application',JSON.stringify(Applicant.allApplicant));
   getApplication();
 }
+function populateForm() {
+
+  let serviceArray = ['Car care', 'Cleaning', 'Electrical', 'Mechanical', 'Plumbing', 'Painting', 'Gardening', 'CCTV service'];
+
+
+  const selectService = document.getElementById('applicantphone');
+  const selectTime = document.getElementById('serviceTime');
+
+  for (let i in serviceArray) {
+    const ServiceOption = document.createElement('option');
+    selectService.appendChild(ServiceOption);
+    ServiceOption.textContent = `${serviceArray[i]}`;
+
+  }
+}
+populateForm();

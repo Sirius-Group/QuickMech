@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/joinus.css">
+    <link rel="icon" href="../img/QUICKMECK.png">
+
     <title>joinus</title>
 </head>
 
@@ -35,12 +37,16 @@
     </header>
 
     <main>
-
+        
         <section>
-            <divc class="apply" id="apply">
+           
+               
+
+            <div class="apply" id="apply">
                 <form class="joinForm" id="joinForm">
 
                     <fieldset>
+                        <img class="imagepng"  src="../img/QUICKMECK_Join_Us-01.png"  >    
                         <legend>apply your application here</legend>
                         <section>
                             <label for="name">Your Name:</label>
@@ -49,17 +55,18 @@
                         </section>
                         <section>
                             <label for="role">Your Role:</label>
-                            <input required="required" type="text" id="applicantRole" placeholder="Electrician"
-                                name="Applicant Role" class="inline1">
+                            <select name="Applicant phone" id="applicantphone" class="applicantphone"> </select>
+
+                           
                         </section>
                         <section>
                             <label for="phone">Your Phone Number:</label>
-                            <input required="required" type="text" id="applicantphone" placeholder="07"
-                                name="Applicant phone" class="inline1">
+                            <input required="required" type="text" id="applicantRole" placeholder="Electrician"
+                            name="Applicant Role" class="inline1">                           
                         </section>
                         <section>
                             <label for="email">Your Email:</label>
-                            <input type="text" id="email" placeholder="email@gmail.com" name="Applicant Email"
+                            <input required="required" type="text" id="email" placeholder="email@gmail.com" name="Applicant Email"
                                 class="inline1">
                         </section>
 

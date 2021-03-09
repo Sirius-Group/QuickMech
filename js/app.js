@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
 const Service = function (name, location, service, time) {
@@ -50,8 +51,6 @@ function handleSubmit(event) {
 
   localStorage.setItem('Service', JSON.stringify(Service.allService));
 
-  // renderOrderedServices();
-
   serviceForm.reset();
   renderOrderedServices();
 }
@@ -76,10 +75,6 @@ let serviceForm = document.getElementById('serviceForm');
 
 serviceForm.addEventListener('submit', handleSubmit);
 
-
-
-
-
 const ordersTable = document.getElementById('orderedSevices');
 function renderOrderedServices() {
   ordersTable.textContent='';
@@ -88,7 +83,6 @@ function renderOrderedServices() {
   {
     let temp=JSON.parse(localStorage.getItem('Service'));
     for (let index = 0; index < temp.length; index++) {
-      // new Service(temp[index].name,temp[index].location,temp[index].service,temp[index].time);
       const tableRow = document.createElement('tr');
       ordersTable.appendChild(tableRow);
       const deleteLink = document.createElement( 'button' );
@@ -96,8 +90,6 @@ function renderOrderedServices() {
       deleteLink.setAttribute( 'type', 'button' );
       deleteLink.setAttribute( 'value', 'delete' );
       deleteLink.setAttribute( 'onClick', 'deleteRow(this)' );
-      // deleteLink.id = `Order ${index}`;
-      // deleteLink.setAttribute( 'dlt', i );
       tableRow.appendChild(deleteLink);
       const customerNameData = document.createElement('td');
       tableRow.appendChild(customerNameData);
@@ -120,8 +112,7 @@ function deleteRow(r) {
   ordersTable.deleteRow(i);
   Service.allService.splice(i,1);
   localStorage.setItem('Service',JSON.stringify( Service.allService));
-  // localStorage.removeItem('Service');
-  // localStorage.setItem('Service', JSON.stringify(Service.allService));
+
 }
 renderOrderedServices();
 

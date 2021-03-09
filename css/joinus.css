@@ -77,7 +77,7 @@ form {
     /* margin: auto; */
     position: relative;
     width: 550px;
-    height: 300px;
+    height: 350px;
     font-family:'Philosopher', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -92,6 +92,7 @@ form {
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     margin-top: 60px;
+    text-transform: capitalize;
   }
 
   input {
@@ -104,6 +105,7 @@ form {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     padding: 4px;
     font-family: 'Philosopher', sans-serif;
+    
   }
 
   legend{
@@ -114,10 +116,33 @@ form {
 
   }
 
+form fieldset section{
+  position: relative;
+  bottom: 30px;
+ justify-content: space-between;
+ display: flex;
+ align-items: center;
+ padding-bottom: 15px;
+ padding:10px 10px ;
+}
+
+  form button{
+   position: relative;
+  right: -430px;
+  bottom: 5px;
+    margin-top: 5px;
+    background-color: #009DFF;
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    border-radius: 10px;
+    border: #999;
+    color:wheat;
+
+  }
   footer {
 
     height: 100px;
-    width: 1100px;
+    width: auto;
     display: flex;
     background:#009DFF;;
     color: white;
@@ -141,3 +166,35 @@ footer span {
 
 }
 
+.imagepng{
+  width:75px;
+   height:75px;
+position: relative;
+bottom: 30px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+/* #list{
+  line-height: 20px ;
+
+} */
+
+div:last-child ul li {
+  line-height: 20px;
+ background-image:url(../img/list-joinus.png);
+ width:75% ;
+
+}
