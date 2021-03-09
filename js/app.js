@@ -38,6 +38,7 @@ function handleSubmit(event) {
     document.getElementById('serviceTime').value);
   //this line to set data in local storig
   localStorage.setItem('Service', JSON.stringify(Service.allService));
+
   serviceForm.reset();
   renderOrderedServices();
 }
@@ -58,7 +59,7 @@ populateForm();
 let serviceForm = document.getElementById('serviceForm');
 serviceForm.addEventListener('submit', handleSubmit);
 
-//this function to git data from local storig and push it in table
+
 const ordersTable = document.getElementById('orderedSevices');
 function renderOrderedServices() {
   ordersTable.textContent='';
@@ -94,8 +95,7 @@ function deleteRow(r) {
   ordersTable.deleteRow(i);
   Service.allService.splice(i,1);
   localStorage.setItem('Service',JSON.stringify( Service.allService));
-  // localStorage.removeItem('Service');
-  // localStorage.setItem('Service', JSON.stringify(Service.allService));
+
 }
 renderOrderedServices();
 
