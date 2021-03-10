@@ -8,6 +8,7 @@
 html, body, .main-container {
   height: 100%;
 }
+
 main {
   width: 960px;
   margin: auto;
@@ -20,6 +21,7 @@ main {
   display: grid;
   grid-template-rows: 50px minmax(calc(100vh - 170px), 1fr) 100px;
 }
+
 #logo {
   width: 100%;
 }
@@ -58,7 +60,38 @@ a {
 /* a:hover {
   background: white;
   color: #009dff;
-} */
+
+}*/
+
+h1{
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-top: 30px;
+  color:#009dff ;
+}
+h2{
+  font-size: 27px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 3px;
+  display: inline-block;
+}
+p{
+  font-size: 20px;
+  margin-left: 28px;
+  margin-bottom: 10px;
+}
+img{
+  width:30px;
+  height: 30px;
+  position: relative; 
+}
+
+
+
+
 form {
   background: -webkit-linear-gradient(bottom, #cccccc, #eeeeee 175px);
   background: -moz-linear-gradient(bottom, #cccccc, #eeeeee 175px);
@@ -112,7 +145,7 @@ select {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  width: 290px;
+  width: 335px;
   padding: 3px 3px;
 }
 .paddingLabel {
