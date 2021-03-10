@@ -10,7 +10,10 @@
 main {
   width: 960px;
   margin: auto;
+<<<<<<< HEAD
 
+=======
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 }
 #logo img {
   height: 80px;
@@ -41,7 +44,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   z-index: 100;
+=======
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 }
 .main-container header a {
   display: inline-block;
@@ -191,6 +197,33 @@ h1 {
   font-size: 60px;
   padding-bottom: 30px;
 }
+<<<<<<< HEAD
+=======
+
+
+.steps-section {
+  padding: 40px 0;
+  background-color: #eee;
+  margin: 0;
+}
+
+.page-intro p {
+  font-size: 20px;
+  text-align: center;
+  text-indent: -20px;
+}
+
+.page-intro {
+  background-color: #eee;
+  margin-bottom: 30px;
+}
+
+.steps-section h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20pt;
+}
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 /*   footer {
     height: 100px;
     width: auto;
@@ -248,6 +281,7 @@ body h1 {
   text-align: center;
   margin-top: 20px;
 }
+<<<<<<< HEAD
 
 [type=radio] {
   display: none;
@@ -255,28 +289,65 @@ body h1 {
 
 #slider {
   height: 65vh;
+=======
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  animation-iteration-count: infinite;
+}
+.container1 img {
+  width: 800px;
+  height: 500px;
+  border: 4px solid #ccc;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  margin-bottom: 50px;
+}
+.container1 ul {
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
   margin-top: 30px;
 }
+<<<<<<< HEAD
 
 #slider label {
   margin: auto;
   width: 800px;
   height: 400px;
   border-radius: 4px;
+=======
+.container1 ul li {
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
   position: absolute;
   left: 0; right: 0;
   cursor: pointer;
   transition: transform 0.4s ease;
 }
+<<<<<<< HEAD
 
 #s1:checked ~ #slide4, #s2:checked ~ #slide5,
 #s3:checked ~ #slide1, #s4:checked ~ #slide2,
 #s5:checked ~ #slide3 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(-30%,0,-200px);
+=======
+.container1 ul li:nth-child(2) {
+  animation-delay: 4s;
+}
+.container1 ul li:nth-child(3) {
+  animation-delay: 8s;
+}
+.container1 ul li:nth-child(4) {
+  animation-delay: 12s;
+}
+.container1 ul li:nth-child(5) {
+  animation-delay: 16s;
+}
+.container1 ul li:nth-child(6) {
+  animation-delay: 20s;
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 }
 
 #s1:checked ~ #slide5, #s2:checked ~ #slide1,
@@ -300,9 +371,12 @@ body h1 {
   transform: translate3d(15%,0,-100px);
 }
 
+<<<<<<< HEAD
 #s1:checked ~ #slide3, #s2:checked ~ #slide4,
 #s3:checked ~ #slide5, #s4:checked ~ #slide1,
 #s5:checked ~ #slide2 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(30%,0,-200px);
 }
+=======
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800

@@ -4,22 +4,53 @@
   box-sizing: border-box;
   /* font-family: "Philosopher", sans-serif; */
   font-family: 'Raleway', sans-serif;
+<<<<<<< HEAD
 }
 html, body, .main-container {
   height: 100%;
+=======
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 }
+
 
 main {
   width: 960px;
   margin: auto;
+<<<<<<< HEAD
+=======
+  
+}
+.main-container {
+  display: grid;
+  grid-template-rows: 50px minmax(calc(100vh - 170px), 1fr) 100px;
+}
+
+.main-content {
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
   display: grid;
   align-items: center;
   justify-content: space-around;
   grid-template-columns: repeat(2, 1fr);
 }
+<<<<<<< HEAD
 .main-container {
   display: grid;
   grid-template-rows: 50px minmax(calc(100vh - 170px), 1fr) 100px;
+=======
+
+.service-content {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.service-content h1 {
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 }
 
 #logo {
@@ -70,6 +101,26 @@ h1{
   margin-left: 15px;
   margin-top: 30px;
   color:#009dff ;
+<<<<<<< HEAD
+}
+h2{
+  font-size: 27px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 3px;
+  display: inline-block;
+}
+p{
+  font-size: 20px;
+  margin-left: 28px;
+  margin-bottom: 10px;
+}
+img{
+  width:30px;
+  height: 30px;
+  position: relative; 
+=======
+>>>>>>> eb389cd57020c04f990c6ebc973193f5eaa49800
 }
 h2{
   font-size: 27px;
@@ -88,6 +139,9 @@ img{
   height: 30px;
   position: relative; 
 }
+
+
+
 
 
 
