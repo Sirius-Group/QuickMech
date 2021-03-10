@@ -14,7 +14,7 @@ function handleApply(event) {
   event.preventDefault();
   new Applicant(
     document.getElementById('applicantName').value,
-     document.getElementById('applicantRole').value,
+    document.getElementById('applicantRole').value,
     document.getElementById('applicantphone').value,
     document.getElementById('email').value);
   localStorage.setItem('application', JSON.stringify(Applicant.allApplicant));
