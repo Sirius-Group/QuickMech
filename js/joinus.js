@@ -14,7 +14,7 @@ function handleApply(event) {
   event.preventDefault();
   new Applicant(
     document.getElementById('applicantName').value,
-    // document.getElementById('applicantRole').value,
+     document.getElementById('applicantRole').value,
     document.getElementById('applicantphone').value,
     document.getElementById('email').value);
   localStorage.setItem('application', JSON.stringify(Applicant.allApplicant));
@@ -52,7 +52,7 @@ function getApplication()
       applicantphoneData.textContent = `His/her phone number: ${app[i].number}`;
       const emailData = document.createElement('li');
       listOfApplication.appendChild(emailData);
-      emailData.textContent = `His/her phone email: ${app[i].email}`;
+      emailData.textContent = `His/her email: ${app[i].email}`;
 
     }
   }
@@ -80,7 +80,7 @@ function deleteRow(list) {
 }
 function populateForm() {
   let serviceArray = ['Car care', 'Cleaning', 'Electrical', 'Mechanical', 'Plumbing', 'Painting', 'Gardening', 'CCTV service'];
-  const selectService = document.getElementById('applicantphone');
+  const selectService = document.getElementById('applicantRole');
   const selectTime = document.getElementById('serviceTime');
   for (let i in serviceArray) {
     const ServiceOption = document.createElement('option');
