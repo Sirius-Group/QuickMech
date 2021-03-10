@@ -187,6 +187,30 @@ h1 {
   font-size: 60px;
   padding-bottom: 30px;
 }
+
+
+.steps-section {
+  padding: 40px 0;
+  background-color: #eee;
+  margin: 0;
+}
+
+.page-intro p {
+  font-size: 20px;
+  text-align: center;
+  text-indent: -20px;
+}
+
+.page-intro {
+  background-color: #eee;
+  margin-bottom: 30px;
+}
+
+.steps-section h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20pt;
+}
 /*   footer {
     height: 100px;
     width: auto;
