@@ -22,8 +22,7 @@
   }
   header{
     width: 100%;
-    background: linear-gradient(to bottom, #04bffe 0%, #4481eb 100%);
-    align-items: center;
+    background-color: #7baac5;   
     padding: 20px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -244,14 +243,82 @@ div:last-child ul li {
 
 
 
+ header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  /* font-family: 'Philosopher', sans-serif; */
+}
+header nav {
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: #eff0b6;
+  padding: 0 20px;
+  font-weight: bolder;
+  /* font-family: 'Philosopher', sans-serif; */
+}
+a:hover {
+  background: white;
+  color: #009dff;
+}
+
+
+.main-container header {
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+      height: 73px;
+      padding: 0;
+    margin: 0;
+   
+opacity: 1;
+}
+.main-container header a {
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 20px;
+  border: 0;
+  font-weight: 400;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+.main-container header a:hover {
+  background: none;
+}
+.main-container header a:hover::after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  height: 1.5px;
+  background: #fff;
+  top: 30px;
+  transform: translateX(-50%);
+}
 
 
 
 
 
+.li1
+{
+  width:0%;
+}
 
 
-
+.logo
+{
+  width:3.2%;
+}
 
 
 
