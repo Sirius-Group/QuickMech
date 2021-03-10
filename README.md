@@ -9,7 +9,6 @@ The website Stories:
 As a user, I should be able to fill the required information of my service order.
 As a user, I should be able to choose my location and the time of my service order.
 As a user, I should be able to know if my order has been submitted.
-As a user, I should be able to rate the service provided to me.
 As a user, I should be able to check and see my order list.
 As a user, I should be able to cancel any service I ordered.
 

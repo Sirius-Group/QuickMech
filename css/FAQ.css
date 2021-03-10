@@ -32,12 +32,12 @@ width: 100%;
   
   header{
 
-    width: 1100px;
+    /* width: 1100px; */
     background-color: #009DFF;
     align-items: center;
     padding: 20px;
     margin: auto;
-}
+  }
 
 header nav ul  {
   display : flex; justify-content:center; align-items: center;
@@ -83,6 +83,7 @@ h2{
     font-size: 22px;
     color: #009dff;
     font-family: 'Philosopher', sans-serif;
+    
 }
 
 .accordion {
@@ -97,42 +98,31 @@ h2{
     outline: none;
     font-size: 23px;
     font-weight:bolder;
-    transition: 0.4s;
-    font-family: 'Open Sans Condensed', sans-serif;
+    transition: 0.4s; font-family: 'Philosopher', sans-serif;
   }
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: rgb(223, 223, 223); 
   }
   
   .panel {
     padding: 0 18px;
     display: none;
-    overflow: hidden;
-    font-family: 'Open Sans Condensed', sans-serif;
+    overflow: hidden; font-family: 'Philosopher', sans-serif;
     font-size: 23px;
     font-weight: 500;
     /* color:#5cb958; */
-    color:#6bd16a;
-    background-color: #e4e3e3;
+    color:#ffffff;
+    background-color: #c2c2c2;
     padding: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
 
-table tr,td,th{
-  border: 2px solid black;
-}
-table td {
-  padding:  10px;
-}
-table tr th {
-  padding: 7px;
-}
 
 footer {
 
     height: 100px;
-    width: 1100px;
+    width: auto;
     display: flex;
     background:#009DFF;;
     color: white;
@@ -141,7 +131,10 @@ footer {
     text-align: center;
     padding: 25px;
     margin: auto;
-  margin-top: 20px;
+
+  margin-top: 155px;
+
+  font-family: 'Philosopher', sans-serif;
   }
 
 footer span {

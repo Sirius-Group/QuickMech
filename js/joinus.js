@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 const Applicant = function (name, role, number, email) {
 
@@ -6,47 +7,35 @@ const Applicant = function (name, role, number, email) {
   this.number = number;
   this.email = email;
   Applicant.allApplicant.push(this);
-
 };
-
 Applicant.allApplicant = [];
-
 
 function handleApply(event) {
   event.preventDefault();
   new Applicant(
     document.getElementById('applicantName').value,
-    document.getElementById('applicantRole').value,
+     document.getElementById('applicantRole').value,
     document.getElementById('applicantphone').value,
     document.getElementById('email').value);
-
   localStorage.setItem('application', JSON.stringify(Applicant.allApplicant));
 
   joinForm.reset();
   getApplication();
-
 }
-
 let parentElement = document.getElementById('output');
 const listOfApplication= document.createElement('ul');
+listOfApplication.setAttribute('id', 'list');
+
 
 function getApplication()
 {
-
   listOfApplication.textContent='';
-
   if(localStorage.application)
   {
-
     let app=JSON.parse(localStorage.getItem('application'));
-
     for (let i=0; i<app.length; i++) {
-
-      // const listOfApplication = document.createElement('ul');
-      // parentElement.appendChild(listOfApplication);
       const deleteLink = document.createElement( 'button' );
       parentElement.appendChild(listOfApplication);
-
       deleteLink.textContent = 'X';
       deleteLink.setAttribute( 'type', 'button' );
       deleteLink.setAttribute( 'value', 'delete' );
@@ -55,31 +44,21 @@ function getApplication()
       const applicantNameData = document.createElement('li');
       listOfApplication.appendChild(applicantNameData);
       applicantNameData.textContent = `The Applicant name is: ${ app[i].name}`;
-
       const applicantRoleData = document.createElement('li');
       listOfApplication.appendChild(applicantRoleData);
       applicantRoleData.textContent = `His/her role is: ${app[i].role}`;
-
       const applicantphoneData = document.createElement('li');
       listOfApplication.appendChild(applicantphoneData);
       applicantphoneData.textContent = `His/her phone number: ${app[i].number}`;
-
       const emailData = document.createElement('li');
       listOfApplication.appendChild(emailData);
-      emailData.textContent = `His/her phone email: ${app[i].email}`;
+      emailData.textContent = `His/her email: ${app[i].email}`;
 
     }
   }
 }
-
-
-
-
-
 let joinForm = document.getElementById('joinForm');
 joinForm.addEventListener('submit', handleApply);
-
-
 
 function getBackDataFromLocalstorage()
 {
@@ -91,15 +70,23 @@ function getBackDataFromLocalstorage()
     }
   }
 }
-
 getBackDataFromLocalstorage();
 getApplication();
 
-
-
 function deleteRow(list) {
-
   Applicant.allApplicant.splice(list,1);
   localStorage.setItem('application',JSON.stringify(Applicant.allApplicant));
   getApplication();
 }
+function populateForm() {
+  let serviceArray = ['Car care', 'Cleaning', 'Electrical', 'Mechanical', 'Plumbing', 'Painting', 'Gardening', 'CCTV service'];
+  const selectService = document.getElementById('applicantRole');
+  const selectTime = document.getElementById('serviceTime');
+  for (let i in serviceArray) {
+    const ServiceOption = document.createElement('option');
+    selectService.appendChild(ServiceOption);
+    ServiceOption.textContent = `${serviceArray[i]}`;
+
+  }
+}
+populateForm();

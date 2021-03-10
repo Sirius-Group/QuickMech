@@ -1,268 +1,212 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap%27');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap%27");
 
 * {
   box-sizing: border-box;
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
-/* 
-body{
-    width: 100%;
-    overflow-x: hidden;
-    margin:0;
-	 color:#6a6f8c;
-	 background:#f4f6ff;
-	 font:600 16px/18px 'Open Sans',sans-serif; } */
 
-   main {
-
+main {
   width: 960px;
   margin: auto;
   /*------------------------- Edited by Raba'a-----------------------------*/
-  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  width: 100%;
+}
+#logo img {
+  height: 100px;
+  width: 120px;
+}
+
+#logo div {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  /* width: 1100px; */
+  background-color: #009dff;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  font-family: "Philosopher", sans-serif;
+}
+
+header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  }
-
-   #logo {
-   width: 100%;
-   }
-     #logo img{
-       height: 100px;
-       width: 120px;
-       
-     }
-   
-   #logo div {
-   
-     display : flex;   
-     justify-content: center;
-     
-   }
-
-   header{
-
-    width: 1100px;
-    background-color: #009DFF;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
+  font-weight: bolder;
+}
+header nav {
+  text-align: right;
 }
 
-header nav ul  {
-  display : flex; justify-content:center; align-items: center;
+a {
+  text-decoration: none;
+  color: #eff0b6;
+  padding: 0 20px;
   font-weight: bolder;
-}  
-  header nav {
-    text-align: right;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #eff0b6;
-    padding: 0 20px;
-    font-weight: bolder;
-
-  }
+}
 
 a:hover {
-    background:white;
-    color: #009DFF;
-  }
-
+  background: white;
+  color: #009dff;
+}
 
 form {
-    background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    /* margin: auto; */
-    position: relative;
-    width: 550px;
-    height: 300px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #009dff;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 10px;
-    border: 1px solid #999;
-    border: inset 1px solid #333;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    margin-top: 60px;
-}
-
-  legend{
-    
-    text-align: center;
-    font-family: 'Philosopher', sans-serif;
-    font-size: x-large;
-    margin-bottom: 10px;
-  }
-
-  .inline{
-      display: inline-block;
-      width: 70%;
-     align-content: right;
-     margin-top: 10px;
-     margin-left: 28px;
-
-
-  }
-  .inline1{
-        display: inline-block;
-        width: 70%;
-       align-content: right;
-       margin: 15px;
-    
-  
-  }
-
-  input {
-    width: 375px;
-    display: block;
-    border: 1px solid #999;
-    height: 25px;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    padding: 4px;
-  }
-
-  .paddingLabel{
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    margin-top: 5px;
-    /* margin-left: 0px; */
-  }
-
-  .paddingLabel1{
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-    margin-left: 73px;
-    padding-right: 20px;
-  }
-
-  button {
-    width: 100px;
-    right: 20px;
-    bottom: 20px;
-    margin-bottom: 50px;
-    background: #009dff;
-    color: #fff;
-    font-family: Tahoma, Geneva, sans-serif;
-    height: 30px;
-    border-radius: 15px;
-    border: 1p solid #999;
-
-  }
-  
-  
-  .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-    }
-
-
-  input:focus {
-    border: 1px solid #09C;
-  }
-
-span{
-margin-left: 30px;
-color: darkgrey;
-} */
-
-.footer__a a{
-  color: #009dff;
-  margin: 0 10px;
-  
-  }
-
-  footer{
-  display: flex ;
-  flex-direction: column;
-  align-items: center;
-  }
-
-  .footermidal{
-      border-left: 2px solid darkgrey;        
-      border-right: 2px solid darkgrey;     
-      padding: 0 10px;   
-   }
-
-span{
-  margin-left: 30px;
-  margin-top: 10px;
-  color: darkgrey;
-}
-
-
-table{
-  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  /* margin: auto; */
+  background: -webkit-linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  background: -moz-linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  background: linear-gradient(bottom, #cccccc, #eeeeee 175px);
   position: relative;
-  width: 550px;
+  width: 500px;
   height: 300px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 20px;
   line-height: 24px;
+  font-weight: bold;
   color: #009dff;
   text-decoration: none;
+  border-radius: 10px;
   padding: 10px;
-  border: 1px solid #999;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   margin-top: 60px;
 }
-table tr,td,th{
-  border: 1px solid #999;
+
+legend {
   text-align: center;
+  font-size: x-large;
+  margin-bottom: 10px;
 }
-table td {
-  padding:  10px;
-  height: 10px;
+
+.inline {
+  display: inline-block;
+  width: 70%;
+  align-content: right;
+  margin-top: 10px;
+  margin-left: 20px;
 }
+.inline1 {
+  display: inline-block;
+  width: 70%;
+  align-content: right;
+  margin-top: 10px;
+}
+
+input {
+  width: 375px;
+  height: 25px;
+  display: block;
+  border: 1px solid #999;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+}
+
+select {
+  margin-top: 10px;
+  border: 1px solid #999;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  width: 290px;
+  padding: 3px 3px;
+}
+
+.paddingLabel {
+  padding-right: 8px;
+  display: inline;
+}
+
+.paddingLabel1 {
+  padding-right: 8px;
+  display: inline;
+}
+
+button {
+  position: relative;
+  text-align: center;
+  bottom: 10px;
+  margin-top: 30px;
+  background-color: #009dff;
+  padding: 5px 15px 5px 15px;
+  font-size: large;
+  border-radius: 10px;
+  border: #999;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+input:focus {
+  border: 1px solid #09c;
+}
+
+table {
+  background: -webkit-linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  background: -moz-linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  background: linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  position: relative;
+  width: 472px;
+  height: 300px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #009dff;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+table tr,
+td,
+th {
+  text-align: center;
+  border: 0.1px solid white;
+}
+
 table tr th {
-  padding: 7px;
   font-weight: bold;
 }
 
-table{
-  color: #09C;
-}
-
 footer {
-
-  height: 100px;
-  width: 1100px;
+  width: auto;
   display: flex;
-  background:#009DFF;;
+  background: #009dff;
   color: white;
   text-align: center;
   flex-direction: column;
   text-align: center;
   padding: 25px;
   margin: auto;
+
   margin-top: 90px;
+  font-family: "Philosopher", sans-serif;
 }
 
 footer span {
-padding-top: 25px;
+  padding-top: 25px;
 }
-footer div a{
+footer div a {
   padding-top: 10px;
   text-decoration: none;
-
 }
