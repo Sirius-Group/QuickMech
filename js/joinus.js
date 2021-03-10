@@ -52,7 +52,7 @@ function getApplication()
       applicantphoneData.textContent = `His/her phone number: ${app[i].number}`;
       const emailData = document.createElement('li');
       listOfApplication.appendChild(emailData);
-      emailData.textContent = `His/her phone email: ${app[i].email}`;
+      emailData.textContent = `His/her email: ${app[i].email}`;
 
     }
   }
