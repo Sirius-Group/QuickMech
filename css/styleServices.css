@@ -1,17 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap%27");
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   box-sizing: border-box;
-  font-family: "Philosopher", sans-serif;
+  /* font-family: "Philosopher", sans-serif; */
+  font-family: 'Raleway', sans-serif;
+}
+html, body, .main-container {
+  height: 100%;
 }
 
-/* main {
+main {
   width: 960px;
   margin: auto;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-around;
-} */
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-container {
+  display: grid;
+  grid-template-rows: 50px minmax(calc(100vh - 170px), 1fr) 100px;
+}
 
 #logo {
   width: 100%;
@@ -20,21 +29,19 @@
   height: 100px;
   width: 120px;
 }
-
 #logo div {
   display: flex;
   justify-content: center;
 }
-
 header {
   /* width: 1100px; */
-  background-color: #009dff;
+  width: 100%;
+  background: linear-gradient(to bottom, #04bffe 0%, #4481eb 100%);
   align-items: center;
   padding: 20px;
   margin: auto;
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
-
 header nav ul {
   display: flex;
   justify-content: center;
@@ -44,18 +51,17 @@ header nav ul {
 header nav {
   text-align: right;
 }
-
 a {
   text-decoration: none;
   color: #eff0b6;
   padding: 0 20px;
   font-weight: bolder;
 }
-
-a:hover {
+/* a:hover {
   background: white;
   color: #009dff;
-}
+
+}*/
 
 h1{
   font-size: 35px;
@@ -83,12 +89,14 @@ img{
   position: relative; 
 }
 
+
+
+
 form {
   background: -webkit-linear-gradient(bottom, #cccccc, #eeeeee 175px);
   background: -moz-linear-gradient(bottom, #cccccc, #eeeeee 175px);
   background: linear-gradient(bottom, #cccccc, #eeeeee 175px);
   position: relative;
-  width: 500px;
   height: 300px;
   font-family: "Philosopher", sans-serif;
   font-size: 20px;
@@ -103,13 +111,11 @@ form {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   margin-top: 60px;
 }
-
 legend {
   text-align: center;
   font-size: x-large;
   margin-bottom: 10px;
 }
-
 .inline {
   display: inline-block;
   width: 70%;
@@ -123,7 +129,6 @@ legend {
   align-content: right;
   margin-top: 10px;
 }
-
 input {
   width: 375px;
   height: 25px;
@@ -134,7 +139,6 @@ input {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   padding: 4px;
 }
-
 select {
   margin-top: 10px;
   border: 1px solid #999;
@@ -144,17 +148,14 @@ select {
   width: 335px;
   padding: 3px 3px;
 }
-
 .paddingLabel {
   padding-right: 8px;
   display: inline;
 }
-
 .paddingLabel1 {
   padding-right: 8px;
   display: inline;
 }
-
 button {
   position: relative;
   text-align: center;
@@ -169,25 +170,20 @@ button {
   cursor: pointer;
   justify-content: center;
 }
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
 }
-
 input:focus {
   border: 1px solid #09c;
 }
-
 table {
   background: -webkit-linear-gradient(bottom, #cccccc, #eeeeee 175px);
   background: -moz-linear-gradient(bottom, #cccccc, #eeeeee 175px);
   background: linear-gradient(bottom, #cccccc, #eeeeee 175px);
   position: relative;
-  width: 472px;
-  height: 300px;
   font-family: "Philosopher", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -201,37 +197,40 @@ table {
   margin-top: 60px;
   margin-left: 50px;
 }
-
 table tr,
 td,
 th {
   text-align: center;
   border: 0.1px solid white;
 }
-
 table tr th {
   font-weight: bold;
 }
-
 footer {
   width: auto;
   display: flex;
-  background: #009dff;
+  width: 100%;
+  background-color:grey;
   color: white;
   text-align: center;
   flex-direction: column;
   text-align: center;
-  padding: 25px;
-  margin: auto;
-
-  margin-top: 90px;
+  height: 100%;
+justify-content: center;
   font-family: "Philosopher", sans-serif;
-}
-
-footer span {
-  padding-top: 25px;
 }
 footer div a {
   padding-top: 10px;
   text-decoration: none;
+}
+footer p {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+}
+ footer a {
+  font-weight: 400;
+  color: #fff;
+}
+ footer a:hover {
+  background: none;
 }
