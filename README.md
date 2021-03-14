@@ -27,3 +27,4 @@ Team Members:
 3- Ayah Smadi.
 4- Tamara Alrashed.
 5- Raba’a Hasan.
+6- Mohamad Mesmar (Graphic Designer).
